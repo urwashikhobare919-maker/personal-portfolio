@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#2a0a26,#8b2e78,#b84aa3);
+color:white;
+}
+
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+background:rgba(42,10,38,0.85);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+box-shadow:0 0 20px rgba(139,46,120,.4);
+}
+
+nav ul{display:flex;list-style:none;}
+nav li{margin-left:30px;}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#e59ad5;
+}
+
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:90px 10%;
+min-height:90vh;
+flex-wrap:wrap;
+}
+
+.hero img{
+width:270px;
+border-radius:50%;
+border:6px solid #8b2e78;
+box-shadow:0 0 40px rgba(184,74,163,.7);
+}
+
+.hero span{color:#e59ad5}
+
+
+/* BUTTON */
+
+button{
+margin-top:22px;
+padding:13px 34px;
+border:none;
+background:linear-gradient(45deg,#8b2e78,#c65ab1);
+color:white;
+border-radius:35px;
+cursor:pointer;
+font-weight:600;
+transition:.35s;
+box-shadow:0 0 18px rgba(139,46,120,.5);
+}
+
+button:hover{
+transform:scale(1.05);
+background:linear-gradient(45deg,#c65ab1,#e59ad5);
+}
+
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+h2{
+margin-bottom:45px;
+font-size:38px;
+color:#ffd6f6;
+}
+
+
+/* GLASS CARD */
+
+.glass{
+background:rgba(255,255,255,0.08);
+padding:35px;
+border-radius:22px;
+max-width:820px;
+margin:auto;
+backdrop-filter:blur(14px);
+box-shadow:0 0 35px rgba(139,46,120,.3);
+}
+
+
+/* SKILLS */
+
+.skill{
+margin:28px auto;
+max-width:520px;
+text-align:left;
+}
+
+.bar{
+background:#3b0d33;
+height:12px;
+border-radius:20px;
+}
+
+.bar div{
+height:12px;
+background:linear-gradient(90deg,#8b2e78,#e59ad5);
+border-radius:20px;
+}
+
+
+/* PROJECT CARDS */
+
+.project-wrap{
+display:flex;
+gap:32px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.project{
+width:270px;
+padding:30px;
+background:rgba(255,255,255,0.08);
+border-radius:20px;
+transition:.45s;
+box-shadow:0 0 25px rgba(139,46,120,.25);
+}
+
+.project:hover{
+transform:translateY(-12px) scale(1.05);
+background:#8b2e78;
+}
+
+
+/* FORM */
+
+.form input,
+.form textarea{
+width:100%;
+padding:14px;
+margin:12px 0;
+border:none;
+border-radius:12px;
+background:rgba(255,255,255,0.1);
+color:white;
+}
+
+.form input::placeholder,
+.form textarea::placeholder{
+color:#f0c7ea;
+}
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:24px;
+background:#2a0a26;
+margin-top:45px;
+}
+/* LOADER */
+
+.loader{
+display:none;
+margin:20px auto;
+border:6px solid rgba(255,255,255,.2);
+border-top:6px solid #ffd6f6;
+border-radius:50%;
+width:40px;
+height:40px;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+/* SUCCESS TEXT */
+
+#successMsg{
+display:none;
+margin-top:15px;
+color:#ffd6f6;
+font-weight:600;
+}
+/* CONTACT LAYOUT */
+
+.contact-container{
+display:flex;
+gap:40px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.contact-left,
+.contact-right{
+flex:1;
+min-width:280px;
+text-align:left;
+}
+
+/* CONTACT LINKS */
+
+.contact-left a{
+color:#ffd6f6;
+text-decoration:none;
+font-weight:600;
+}
+
+.contact-left a:hover{
+text-decoration:underline;
+}
+
+
+/* LOADER */
+
+.loader{
+display:none;
+margin:20px auto;
+border:6px solid rgba(255,255,255,.2);
+border-top:6px solid #ffd6f6;
+border-radius:50%;
+width:40px;
+height:40px;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+#successMsg{
+display:none;
+margin-top:15px;
+color:#ffd6f6;
+font-weight:600;
+}
+/* CONTACT FORM PERFECT ALIGNMENT */
+
+.contact-form{
+max-width:650px;
+margin:auto;
+}
+
+.contact-form .row{
+display:flex;
+gap:15px;
+margin-bottom:15px;
+}
+
+.contact-form input{
+flex:1;
+padding:14px;
+border:none;
+border-radius:10px;
+background:rgba(255,255,255,0.1);
+color:white;
+}
+
+.contact-form textarea{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background:rgba(255,255,255,0.1);
+color:white;
+margin-bottom:15px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+color:#eee;
+}
+/* ACHIEVEMENTS */
+
+.achievement-wrap{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+}
+
+.achievement-card{
+width:260px;
+padding:25px;
+background:rgba(255,255,255,0.08);
+border-radius:18px;
+box-shadow:0 0 25px rgba(139,46,120,.25);
+transition:.4s;
+font-size:16px;
+}
+
+.achievement-card:hover{
+transform:translateY(-10px) scale(1.05);
+background:#8b2e78;
+box-shadow:0 0 50px rgba(255,214,246,.5);
+}
+.project button{
+padding:10px 16px;
+margin-top:10px;
+border:none;
+border-radius:8px;
+background:#7b2cff;
+color:white;
+cursor:pointer;
+font-weight:600;
+transition:.3s;
+}
+
+.project button:hover{
+background:#5a00e0;
+transform:scale(1.05);
+}
